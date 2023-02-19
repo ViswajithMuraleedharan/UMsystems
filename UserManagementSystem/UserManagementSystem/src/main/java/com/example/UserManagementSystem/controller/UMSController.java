@@ -20,7 +20,7 @@ public class UMSController {
     @Autowired
     UMSService umsService;
     @GetMapping("/user")
-    public List<UMS> findDoctor(@Nullable @RequestParam Integer userId){
+    public List<UMS> findUser(@Nullable @RequestParam Integer userId){
         return umsService.findUser(userId);
     }
 
